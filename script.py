@@ -4,7 +4,7 @@ import os
 import json
 
 MYPASS = os.getenv('MYPASS')
-uri = "mongodb+srv://mackenziekeeley:jYW5a6762zeVuRfs@cluster0.ribr6as.mongodb.net/"
+uri = "mongodb+srv://mackenziekeeley:<password>@cluster0.ribr6as.mongodb.net/"
 client = MongoClient(uri, username='mackenziekeeley', password=MYPASS, connectTimeoutMS=200, retryWrites=True)
 db = client.spr2kv
 collection = db.dp2
